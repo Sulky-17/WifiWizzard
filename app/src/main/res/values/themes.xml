@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WifiWizzard" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.WifiWizzard" parent="Base.Theme.WifiWizzard" />
+
+    <style name="listButton" parent="Base.Theme.WifiWizzard">
+        <item name="backgroundTint">@color/verdeOlivo</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="label" parent="Base.Theme.WifiWizzard">
+        <item name="android:textColor">@color/negroClaro</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="navigateButton" parent="Base.Theme.WifiWizzard">
+        <item name="backgroundTint">@color/verdeClaro</item>
+        <item name="android:textColor">@color/negroClaro</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="cardTextTitle" parent="Base.Theme.WifiWizzard">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="cardText" parent="Base.Theme.WifiWizzard">
+        <item name="android:textColor">@color/negroClaro</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="cardTextSmall" parent="Base.Theme.WifiWizzard">
+        <item name="android:textColor">@color/negroClaro</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+</resources>
