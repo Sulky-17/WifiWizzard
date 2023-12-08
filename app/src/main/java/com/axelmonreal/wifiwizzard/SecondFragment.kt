@@ -36,8 +36,8 @@ class  SecondFragment : Fragment() {
             val wifiImage = wifiImageEditText.text.toString().trim()
 
             if (validateInput(wifiName, wifiPassword, wifiDisponibility, wifiWin, wifiImage)) {
-                val newTask = Wifi(0, wifiName, wifiPassword, wifiDisponibility, wifiWin, wifiImage)
-                sharedViewModel.addTask(newTask)
+                val newWifi = Wifi(0, wifiName, wifiPassword, wifiDisponibility, wifiWin, wifiImage)
+                sharedViewModel.addWifi(newWifi)
 
                 findNavController().popBackStack()
             } else {

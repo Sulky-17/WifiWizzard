@@ -32,12 +32,12 @@ class ListFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
 
-        sharedViewModel.getTasks().observe(viewLifecycleOwner) { wifi ->
+        sharedViewModel.getWifis().observe(viewLifecycleOwner) { wifi ->
             adapter.updateTasks(wifi)
         }
 
-        val fabAddTask: FloatingActionButton = view.findViewById(R.id.fabAddTask)
-        fabAddTask.setOnClickListener {
+        val fabAddWifi: FloatingActionButton = view.findViewById(R.id.fabAddTask)
+        fabAddWifi.setOnClickListener {
             findNavController().navigate(R.id.action_listFragment_to_secondFragment)
         }
     }

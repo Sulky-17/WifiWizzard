@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/cremaClaro">
 
     <!-- Otros elementos del layout que ya existan -->
 
@@ -17,8 +17,7 @@
         android:layout_marginBottom="16dp"
         android:hint="Wifi Name"
         android:inputType="text"
-        android:textColor="@color/verdeOlivo"
-        android:textColorHint="@color/white" />
+        android:textColorHint="@color/negroClaro" />
 
 
     <EditText
@@ -28,8 +27,7 @@
         android:layout_below="@id/editWifiName"
         android:layout_margin="16dp"
         android:hint="Wifi Password"
-        android:textColor="@color/verdeOlivo"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/negroClaro"
         android:inputType="text" />
 
     <EditText
@@ -39,8 +37,7 @@
         android:layout_below="@id/editWifiPassword"
         android:layout_margin="16dp"
         android:hint="Wifi Disponibility"
-        android:textColor="@color/verdeOlivo"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/negroClaro"
         android:inputType="text" />
 
     <EditText
@@ -50,8 +47,7 @@
         android:layout_below="@+id/editWifiDisponibility"
         android:layout_margin="16dp"
         android:hint="Url Win"
-        android:textColor="@color/verdeOlivo"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/negroClaro"
         android:inputType="text" />
 
     <EditText
@@ -61,17 +57,19 @@
         android:layout_below="@id/editWifiWin"
         android:layout_margin="16dp"
         android:hint="Url Image"
-        android:textColor="@color/verdeOlivo"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/negroClaro"
         android:inputType="text" />
 
     <Button
         android:id="@+id/btnAddWifi"
+        style="@style/listButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editWifiImage"
-        android:layout_margin="16dp"
-        style="@style/navigateButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="Add Wifi" />
 
     <!-- Otros elementos del layout que ya existan -->

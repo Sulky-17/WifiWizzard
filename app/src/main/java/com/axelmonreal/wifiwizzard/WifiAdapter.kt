@@ -8,16 +8,16 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class WifiAdapter(private var wifis: List<Wifi>): RecyclerView.Adapter<WifiAdapter.TaskViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
+class WifiAdapter(private var wifis: List<Wifi>): RecyclerView.Adapter<WifiAdapter.WifiViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WifiViewHolder {
 
         val inflador = LayoutInflater.from(parent.context)
 
         val view = inflador.inflate(R.layout.item_wifi, parent, false)
-        return TaskViewHolder(view)
+        return WifiViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: WifiViewHolder, position: Int) {
         val wifi = wifis[position]
         holder.render(wifi)
 
@@ -32,7 +32,7 @@ class WifiAdapter(private var wifis: List<Wifi>): RecyclerView.Adapter<WifiAdapt
         notifyDataSetChanged()
     }
 
-    class TaskViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    class WifiViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         val name: TextView = view.findViewById(R.id.country_name)
         val password: TextView = view.findViewById(R.id.country_capital)
